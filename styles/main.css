@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Font setup */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.052rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 2.441rem;
+  line-height: 1.35;
+}
+
+h3 {
+  font-size: 1.953rem;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.563rem;
+  line-height: 1.45;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-container {
+  width: 100%;
+  background: #ffffff;
+}
+
+/* Header */
+
+.header-container {
+  width: 100%;
+  background-color: #ffffff;
+  /* min-height: 80px; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  min-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul {
+  display: flex;
+  font-size: 1.15rem;
+}
+
+.navigation li {
+  padding-left: 40px;
+}
+
+.header-btn {
+  background-color: #010643;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+}
