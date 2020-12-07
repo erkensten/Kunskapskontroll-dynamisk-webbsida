@@ -34,7 +34,7 @@
     
                         <li><a href="/kontakt.html">Tjänster</a></li>
                         <li><a href="/om-oss.html">Om Oss</a></li>
-                        <li><a href="/kontakt.html" class="blue-btn, header-btn">Kontakt</a></li>
+                        <li><a href="/kontakt.html" class="blue-btn header-btn">Kontakt</a></li>
                         
                     </ul>
                 </nav>
@@ -52,13 +52,13 @@
 
         <div class="hero-column-1">
 
-            <h1>Vi hjälper er att synas i Google</h1>
+            <h1 class="h1-text">Vi hjälper er att synas i Google</h1>
 
             <p>SeoFlow är en SEO byrå som enbart fokuserar på att få våra kunders webbplatser att synas högt upp i Google.</p>
 
-            <a href="" class="blue-btn">Läs mer</a>
+            <a href="/tjanster.html" class="blue-btn">Läs mer</a>
 
-            <a href="" class="transparent-btn">Kontakta oss</a>
+            <a href="/kontakt.html" class="border-btn">Kontakta oss</a>
 
         </div>
 
@@ -69,9 +69,10 @@
 
         </div>
 
-        <div class="mouse-animation">
-            <img src="./images/mouse.svg" alt="Animation för att uppmuntra scroll">
-        </div>
+    </div>
+
+    <div class="mouse-animation">
+        <img src="./images/mouse.svg" alt="Animation för att uppmuntra scroll">
     </div>
 
     <!-- Hero End -->
@@ -89,34 +90,36 @@
 
             <h2>Arbetsprocessen vid en sökmotoroptimering</h2>
 
-            <div class="col-1">
-
-                <img src="images/ikon-analys.svg" alt="Ikon för analysering">
-
-                <h3>Analysering</h3>
-
-                <p>För att kunna göra ett bra SEO arbete måste man börja med analysen. Vi analyserar hela webbplatsen och det nuvarande innehållet. Därefter gör vi en gedigen sökordsanalys så att vi vet vilka sökord som vi ska optimera er webbplats för.</p>
-
-            </div>
-
-            <div class="col-2">
-
-                <img src="images/ikon-optimering.svg" alt="Ikon för optimering">
-
-                <h3>Optimering</h3>
-
-                <p>Utefter analyserna påbörjar vi optimeringen av webbplatsen och innehållet. Vanliga åtgärder är att se till att webbplatsen är tekniskt optimerad för Google och att innehållet fokuserar på rätt sökord.</p>
-
-            </div>
-
-            <div class="col-3">
-
-                <img src="images/ikon-links.svg" alt="Ikon för länkarbete">
-
-                <h3>Länkarbete</h3>
-
-                <p>En av de viktigaste rankingfaktorerna är fortfarande externa länkar så därav är detta en punkt vi arbetar mycket med för att stärka våra kunders länkprofiler så att de får mer förtroende hos Google.</p>
-
+            <div class="columns">
+                <div class="col-1 col">
+    
+                    <img src="images/ikon-analys.svg" alt="Ikon för analysering">
+    
+                    <h3>Analysering</h3>
+    
+                    <p>För att kunna göra ett bra SEO arbete måste man börja med analysen. Vi analyserar hela webbplatsen och det nuvarande innehållet. Därefter gör vi en gedigen sökordsanalys så att vi vet vilka sökord som vi ska optimera er webbplats för.</p>
+    
+                </div>
+    
+                <div class="col-2 col">
+    
+                    <img src="images/ikon-optimering.svg" alt="Ikon för optimering">
+    
+                    <h3>Optimering</h3>
+    
+                    <p>Utefter analyserna påbörjar vi optimeringen av webbplatsen och innehållet. Vanliga åtgärder är att se till att webbplatsen är tekniskt optimerad för Google och att innehållet fokuserar på rätt sökord.</p>
+    
+                </div>
+    
+                <div class="col-3 col">
+    
+                    <img src="images/ikon-links.svg" alt="Ikon för länkarbete">
+    
+                    <h3>Länkarbete</h3>
+    
+                    <p>En av de viktigaste rankingfaktorerna är fortfarande externa länkar så därav är detta en punkt vi arbetar mycket med för att stärka våra kunders länkprofiler så att de får mer förtroende hos Google.</p>
+    
+                </div>
             </div>
 
         </div>
@@ -128,7 +131,7 @@
         <div class="om-oss-container">
 
             <div class="om-oss-img">
-                <img src="images/om-oss-hero.svg" alt="En illustration med personer som ger en känsla av vilka som jobbar på företaget">
+                <img src="images/om-oss-startsida.svg" alt="En illustration med personer som ger en känsla av vilka som jobbar på företaget">
             </div>
 
             <div class="om-oss-content">
@@ -208,7 +211,10 @@
         <div class="cta-content">
             <h2>Prenumerera på vårt nyhetsbrev</h2>
 
-            <form action=""></form>
+            <form class="form-nyhetsbrev">
+                <input type="email" id="email" name="email" placeholder="Email...">
+                <input type="button" id="button" name="button" value="Skicka">
+            </form>
         </div>
 
     </div>
@@ -218,29 +224,35 @@
 
     <!-- Footer start -->
 
-    <footer class="footer-container">
+    <div class="footer-container">
 
-        <div class="logo">
-            <img src="" alt="">
-        </div>
 
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="">Tjänster</a></li>
-                <li><a href="">Om Oss</a></li>
-                <li><a href="">Kontakt</a></li>
-            </ul>
-        </nav>
 
-        <div class="copyright">
-            <p>© Seoflow 2020.</p>
-        </div>
+        <footer class="footer">
+            <div class="logo">
+                <a href="/"><img src="images/Seoflow-logo.svg" alt="Seoflow logo"></a>
+            </div>
+    
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/tjanster.html">Tjänster</a></li>
+                    <li><a href="/om-oss.html">Om Oss</a></li>
+                    <li><a href="/kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+    
+            <div class="copyright">
+                <p>© Seoflow 2020.</p>
+            </div>
+        </footer>
 
-    </footer>
+    </div>
 
     <!-- Footer end -->
 
 </div>
     
+
+<script src="/main.js"></script>
 </body>
 </html>
