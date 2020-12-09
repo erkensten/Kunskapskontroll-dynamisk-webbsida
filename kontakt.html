@@ -4,21 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seoflow</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
-</head>
 
+    
+</head>
 <body>
 
-    <!-- Header Start -->
 
-    <!-- Header End -->
+    <div class="site-container">
+
+    <!-- Header -->
+
+        <div class="section-container header-container">
 
 
-    <!-- Hero Start -->
+
+            <header class="header">
+                <div class="logo">
+                    <a href="/"><img src="./images/Seoflow-logo.svg" alt="Seoflow logo"></a>
+                </div>
+    
+                <nav class="navigation">
+                    <ul>
+    
+                        <li><a href="/tjanster.html">Tjänster</a></li>
+                        <li><a href="/om-oss.html">Om Oss</a></li>
+                        <li><a href="/kontakt.html" class="blue-btn header-btn">Kontakt</a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="mobile-header">
+                <div class="logo">
+                    <a href="/"><img src="./images/Seoflow-logo.svg" alt="Seoflow logo"></a>
+                </div>
+
+                <div class="hamburger-menu"><img src="./images/hamburger-menu.svg" alt="Mobil meny"></div>
+            </div>
+
+        </div>
+
+    <!-- Header -->
+
+    <!-- ----------------------------------- -->
+
+    <!-- Hero -->
+
+     <!-- Hero -->
+
+     <div class="section-container hero-container">
+
+        <div class="hero-column-1">
+
+            <h1 class="h1-text">Kom i kontakt med oss!</h1>
+
+            <p>Kontakta oss genom att använda dig av kontaktformuläret nedan.</p>
+
+        </div>
+
+
+        <div class="hero-column-2">
+
+            <img class="hero-img img" src="./images/kontakt-hero.svg" alt="Illustration som säger hej">
+
+        </div>
+
+    </div>
 
     <!-- Hero End -->
 
+    <!-- ----------------------------------- -->
+
+    <!-- Main content -->
+
+    <main>
+
+        <div class="section-container kontakt-container">
+
+            <div class="kontakt">
+                <h2>Kontakta Oss</h2>
+    
+                <form class="form-kontakt">
+
+                    <input type="text" id="text" name="text" placeholder="Namn...">
+                    <input type="epost" id="epost" name="epost" placeholder="Epost...">
+                    <input type="text" id="message" name="message" placeholder="Meddelande...">
+                    <input type="submit" id="submit" name="submit" value="Skicka">
+
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+    </main>
 
 
 
@@ -26,16 +113,57 @@
 
 
 
+    <!-- CTA Section start -->
 
-    <!-- Map Section start -->
+    <div class="section-container cta-container">
 
-    <!-- Map Section end -->
+        <div class="cta-content">
+            <h2>Prenumerera på vårt nyhetsbrev</h2>
+
+            <form class="form-nyhetsbrev">
+
+                <input type="email" id="email" name="email" placeholder="Email...">
+                <input type="button" id="button" name="button" value="Skicka">
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- CTA Section end -->
 
 
     <!-- Footer start -->
 
-    <!-- Footer end -->
-    
-</body>
+    <div class="section-container footer-container">
 
+
+
+        <footer class="footer">
+            <div class="logo">
+                <a href="/"><img src="images/Seoflow-logo.svg" alt="Seoflow logo"></a>
+            </div>
+    
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/tjanster.html">Tjänster</a></li>
+                    <li><a href="/om-oss.html">Om Oss</a></li>
+                    <li><a href="/kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+    
+            <div class="copyright">
+                <p>© Seoflow 2020.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Footer end -->
+
+</div>
+    
+
+<script src="/main.js"></script>
+</body>
 </html>
