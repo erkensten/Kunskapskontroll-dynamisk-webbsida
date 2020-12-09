@@ -142,9 +142,60 @@ a {
   text-align: center;
 }
 
+/* Columns */
+
+.columns-container {
+  padding-top: 40px;
+}
+
+.columns-container h2 {
+  text-align: center;
+}
+
+.columns {
+  padding-top: 40px;
+}
+
+.col {
+  text-align: center;
+  margin: 0px 10px;
+  padding-bottom: 20px;
+}
+
+
+/* Om Oss Section */
+
+.om-oss-container {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.om-oss-content {
+  padding-top: 20px;
+}
+
+.om-oss-content p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.om-oss-img {
+  width: 100%;
+}
+
 
 
 /* Tjanster Section */
+
+.tjanster-h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.tjanster-container {
+    padding-top: 0px;
+}
 
 .mobil-tjanster-img {
   display: none;
@@ -152,6 +203,68 @@ a {
 
 
 
+/* CTA Section */
+
+.cta-container {
+  background-color: #010643;
+  margin: 0 auto;
+  margin-top: 40px;
+  min-height: 250px;
+}
+
+.cta-content {
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.form-nyhetsbrev {
+  padding-top: 30px;
+}
+
+input[type=email] {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+
+input[type=button] {
+  background-color: #31D498;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+/* Footer */
+
+.footer-container {
+  background-color: #fafafa;
+}
+
+.footer {
+  padding-top: 60px;
+}
+
+.footer-nav ul {
+  font-size: 1.4rem;
+  padding-top: 30px;
+}
+
+.footer-nav li {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 30px;
+}
+
+.copyright p {
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin: 0;
+}
 
 
 /* Media Queries */
@@ -159,6 +272,120 @@ a {
 /* Tablets */
 
 @media (min-width: 768px) {
+
+  .hero-container {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-btn {
+    display: inline;
+  }
+  
+  .hero-img {
+    display: inline;
+    width: 100%;
+  }
+
+  /* Columns */
+  
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .col-3 h3 {
+    padding-top: 12px;
+  }
+
+  /* Om Oss section */
+
+  .om-oss-container {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .om-oss-content {
+    padding-top: 0px;
+    padding-left: 30px;
+  }
+
+  /* Tjanster Section */
+
+  .tjanster-h2 {
+    text-align: center;
+    padding-top: 60px;
+  }
+  
+  .tjanster-container {
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .tjanster-col-1 {
+    padding-top: 0px;
+  }
+  
+  .tjanster-col-2 {
+    text-align: center;
+  }
+  
+  .tjanster-col-3 {
+    padding-top: 0px;
+  }
+  
+  .mobil-tjanster-img {
+    display: inline;
+    width: 80%;
+  }
+
+  /* CTA Section */
+
+  .cta-container {
+    min-height: 350px;
+}
+
+  .cta-content {
+    padding-top: 90px;
+  }
+
+
+  input[type=email] {
+    padding: 10px 50px;
+  }
+
+  input[type=button] {
+    padding: 10px 60px;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 300px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-nav ul {
+    display: flex;
+    font-size: 1.25rem;
+    padding: 0;
+  }
+  
+  .footer-nav li {
+    padding: 0 20px;
+  }
+
+  .copyright p {
+    padding: 0;
+  }
 
 }
 
@@ -232,28 +459,12 @@ a {
   }
   
   /* Header end */
-  
-  
-  /* Hero */
+
   
   .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
-
-  .hero-btn {
-    display: inline;
-  }
-  
-  .hero-img {
-    display: flex;
-    width: 100%;
-  }
-  
-  /* Hero end */
 
   
   
@@ -262,142 +473,34 @@ a {
   .columns-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 40px;
-  }
-  
-  .columns-container h2 {
-    text-align: center;
-  }
-  
-  .columns {
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .col {
-    text-align: center;
-    margin: 0px 30px;
   }
   
   .om-oss-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
   
   .om-oss-content {
     padding-top: 60px;
-    padding-left: 30px;
   }
   
-  .om-oss-content p {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    padding-bottom: 20px;
-  }
-  
-  .om-oss-img {
-    width: 100%;
-  }
   
   .tjanster-h2 {
-    text-align: center;
     padding-top: 100px;
   }
   
   .tjanster-container {
       max-width: 1200px;
       margin: 0 auto;
-      padding-top: 60px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
   }
   
   .tjanster-col-1 {
     padding-top: 100px;
   }
   
-  .tjanster-col-2 {
-    text-align: center;
-  }
-  
   .tjanster-col-3 {
     padding-top: 100px;
   }
   
-  .mobil-tjanster-img {
-    display: inline;
-    width: 80%;
-  }
-  
-  
-  
-  
-   
-  /* CTA Section */
-  
-  .cta-container {
-      background-color: #010643;
-      margin: 0 auto;
-      margin-top: 80px;
-      min-height: 350px;
-  }
-  
-  .cta-content {
-    color: white;
-    text-align: center;
-    padding-top: 90px;
-  }
-  
-  .form-nyhetsbrev {
-    padding-top: 30px;
-  }
-  
-  input[type=email] {
-    border-radius: 20px;
-    padding: 10px 50px;
-    border: none;
-  }
-  
-  input[type=button] {
-    background-color: #31D498;
-    color: white;
-    padding: 10px 60px;
-    border-radius: 50px;
-    border: none;
-    font-size: 1rem;
-    margin-left: 10px;
-  }
-  
-  
-  
-  /* Footer */
-  
-  .footer-container {
-    width: 100%;
-    background-color: #fafafa;
-  }
-  
-  .footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    min-height: 300px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-nav ul {
-    display: flex;
-    font-size: 1.15rem;
-  }
-  
-  .footer-nav li {
-    padding: 0 20px;
-    font-family: "Poppins", sans-serif;
-  }
 
 }
