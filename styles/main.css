@@ -90,15 +90,29 @@ a {
   display: none;
 }
 
+
+
 .mobile-header {
   display: flex;
   justify-content: space-between;
   min-height: 80px;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.mobile-navigation {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mobile-navigation.show {
+  display: flex;
 }
 
 .hamburger-menu {
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .blue-btn {
@@ -111,6 +125,15 @@ a {
 
 .header-btn {
   padding: 10px 30px;
+}
+
+/* Scroll to top */
+
+.btnScrollToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  cursor: pointer;
 }
 
 /* Hero */
@@ -277,7 +300,7 @@ input[type="button"] {
 }
 
 input[type=text], select, textarea {
-  width: 50%; 
+  width: 80%; 
   padding: 12px; 
   border: 1px solid #ccc; 
   border-radius: 20px; 
@@ -292,7 +315,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  width: 50%;
+  width: 80%;
   background-color: #31D498;
   color: white;
   padding: 12px 40px;
@@ -420,6 +443,18 @@ input[type=submit]:hover {
 
   .copyright p {
     padding: 0;
+  }
+
+  input[type=text], select, textarea {
+    width: 50%; 
+  }
+  
+  #message {
+      padding-bottom: 60px;
+  }
+  
+  input[type=submit] {
+    width: 50%;
   }
 }
 
